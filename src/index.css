@@ -1,13 +1,190 @@
 body {
+  font-family: "poppins";
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.btn {
+  border: none;
+  color: #ffffff;
+  border-radius: 3px;
+  background-color: #313131;
+  line-height: 15px;
+}
+#navbarSupportedContent ul li:hover {
+  border-bottom: 2px solid black;
+}
+.header_images img {
+  width: 100%;
+  height: 680px;
+}
+@media (max-width: 1200px) {
+  .header_images img {
+    width: 1500px;
+  }
+}
+.header_text h1 {
+  position: absolute;
+  top: 265px;
+  left: 165px;
+  width: 556px;
+  height: 190px;
+  color: #ffffff;
+  font-size: 85px;
+  font-weight: 400;
+  letter-spacing: 6px;
+  font-family: "varela";
+  line-height: 95px;
+}
+.header_text p {
+  position: absolute;
+  top: 470px;
+  opacity: 80%;
+  left: 165px;
+  height: 56px;
+  width: 550px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-family: "poppins";
+  line-height: 28px;
+}
+.container_input {
+  position: absolute;
+  top: 560px;
+  left: 165px;
+  width: 390px;
+  height: 46px;
+  opacity: 80%;
+  background-color: #ffffff;
+}
+.subscribe_btn {
+  background-color: #313131;
+  color: #ffffff;
+  border: none;
+}
+.input_box {
+  border: none;
+}
+.right_txt {
+  position: absolute;
+  top: 525px;
+  right: 85px;
+  color: #b8b8b8;
+  font-family: "poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+}
+.right_txt li {
+  list-style: none;
+}
+@media (max-width: 1200px) {
+  .right_txt ul {
+    visibility: hidden;
+  }
+}
+.my_home {
+  font-weight: 600;
+  color: #313131;
+}
+.my_home span {
+  float: right;
+}
+.card {
+  border: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#header_card {
+  height: 350px;
+}
+
+.card-title {
+  font-weight: 600;
+  color: #313131;
+  line-height: 38px;
+}
+#cart {
+  position: absolute;
+  top: 40px;
+  left: 25px;
+  font-weight: 500;
+  color: #4b4b4b;
+}
+.card-body {
+  font-weight: 500;
+  color: #4b4b4b;
+}
+.read {
+  font-weight: 600;
+  color: #313131;
+  line-height: 38px;
+  float: right;
+}
+.load_more {
+  font-weight: 600;
+  color: #313131;
+  line-height: 38px;
+  float: left;
+}
+.middle_section ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.middle_section ul li {
+  font-family: "poppins";
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+}
+@media (max-width: 500px) {
+  .middle_section ul li {
+    margin-right: 10px;
+  }
+}
+#final {
+  font-size: 17.35px;
+  line-height: 24.85px;
+}
+#my_txtt {
+  font-size: 12px;
+}
+
+#footer {
+  background-color: #313131;
+}
+@media (max-width: 1200px) {
+  #footer {
+    width: 1500px;
+  }
+}
+.last_logo img {
+  background-color: white;
+  margin: 40px;
+}
+.footer_para {
+  margin-left: 40px;
+  margin-top: 20px;
+  width: 400px;
+  font-weight: "poppins";
+  color: #ffffff;
+  line-height: 37.94px;
+  letter-spacing: 0.68px;
+}
+.footer_input {
+  width: 390px;
+  height: 46px;
+  opacity: 80%;
+  background-color: #ffffff;
+  margin-top: 40px;
 }
