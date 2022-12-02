@@ -1,6 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const userName = JSON.parse(localStorage.getItem("user"));
+  const logoutBtn = () => {
+    localStorage.removeItem("loggedin");
+    navigate("login");
+  };
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-white sticky">
@@ -22,7 +29,7 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item mx-1">
-                <a className="nav-link active" aria-current="page" href="#">
+                <a className="nav-link active" aria-current="page" href="/">
                   Home
                 </a>
               </li>
@@ -32,13 +39,21 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item mx-1">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="/signup">
                   <button className="btn">Sign up</button>
                 </a>
               </li>
               <li className="nav-item mx-1">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="/login">
                   Login
+                </a>
+              </li>
+              <button>
+                <p className="mt-2"> {userName.name}</p>
+              </button>
+              <li className="nav-item mx-1">
+                <a className="nav-link" href="#" onClick={logoutBtn}>
+                  Logout
                 </a>
               </li>
             </ul>

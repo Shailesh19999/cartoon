@@ -159,7 +159,21 @@ body {
 #my_txtt {
   font-size: 12px;
 }
-
+@media (max-width: 750px) {
+  .flex_dr {
+    display: flex;
+    flex-direction: column;
+  }
+  #trending {
+    margin-left: 120px;
+  }
+  #short_reads {
+    margin-right: 120px;
+  }
+  #blogs {
+    margin-left: 120px;
+  }
+}
 #footer {
   background-color: #313131;
 }
